@@ -1,7 +1,9 @@
-# Nanobdd
-First-ever high-performance thread-safe BDD (Binary Decision Diagrams) library.
+# TOBDD
+First-ever high-throughput thread-safe BDD (Binary Decision Diagrams) library for scalable data plane verification.
 
-As of our research, Nanobdd is currently the fastest BDD library available, achieving exceptional performance in various benchmarks and use cases.
+As of our research, TOBDD is currently the fastest BDD library available, achieving exceptional performance in various large-scale data plane verification benchmarks and use cases.
+
+> The project was originally named Nanobdd, but we will now refer to it as TOBDD to reflect its focus on throughput-optimized BDD operations.
 
 # Features
 - Fully **lock-free** concurrency
@@ -12,7 +14,7 @@ As of our research, Nanobdd is currently the fastest BDD library available, achi
 
 # Install
 ## Dependencies
-Nanobdd depends on tbb for concurrent data structures. 
+TOBDD depends on tbb for concurrent data structures. 
 
 CMake (>=v3.2) and g++(>=v9) is required for compilation.
 
@@ -29,7 +31,7 @@ sudo make install
 ```
 
 # Basic usage
-A simple c++ code to use nanobdd is as follows:
+A simple c++ code to use TOBDD is as follows:
 ```c++
 // include the nanobdd header file
 #include <nanobdd/nanobdd.h>
